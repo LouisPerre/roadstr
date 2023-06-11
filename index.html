@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logoContainer">
+                <div class="logo">
+                    <img src="./img/Page-1.png" alt="">
+                </div>
+                <p>Roadstr</p>
+            </div>
+            <div class="navItem">
+                <ul>
+                    <li>Mes Messages</li>
+                    <li>Mon Espace</li>
+                </ul>
+            </div>
+            <div class="myCar">
+                Proposer ma voiture
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Résumé de votre commande :</h2>
+        <div class="infoContainer">
+            <div class="formLabelContainer">
+                <h3>Personnaliser votre location :</h3>
+                <div class="formContainer">
+                    <form>
+                        <div class="pickup">
+                            <label for="pickupInput">Lieu de livraion :</label>
+                            <select name="pickupInput" id="pickupInput">
+                                <option value="0" selected>Place de la concorde, 75008 Paris, France | 0€</option>
+                                <option value="200">Votre domicile | 200€</option>
+                            </select>
+                        </div>
+                        <div class="assurance">
+                            <label for="assuranceInput">Assurance :</label>
+                            <select name="assuranceInput" id="assuranceInput">
+                                <option value="0">Veuillez selectionner une option</option>
+                                <option value="20">Assurance au tiers | 20€</option>
+                                <option value="200">Assurance tous risques | 200€</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="resumeRental">
+                <div class="imgPhoto">
+                    <img src="./img/martin-katler-iRnyQEpSXBo-unsplash.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4>BMW M2 Coupe Competition</h4>
+                    <p>Propriétaire : Martin Katler</p>
+                    <div class="rentalInfo">
+                        <h4>Information de la location</h4>
+                        <div class="from">
+                            <p>A partir du : </p>
+                            <span>09/06/2023 - 10h00</span>
+                        </div>
+                        <div class="to">
+                            <p>Jusqu'au : </p>
+                            <span>12/06/2023 - 12h00</span>
+                        </div>
+                        <p>A venir récupérer</p>
+                        <p class="bold">
+                            Place de la concorde, 75008 Paris, France | 0€
+                        </p>
+                        <p>Assurance</p>
+                        <p class="bold">Assurance au tiers | 20€</p>
+                    </div>
+                    <button class="payer" id="buttonToPay">Payer 1260 €</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
